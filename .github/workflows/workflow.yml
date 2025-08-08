@@ -5,6 +5,7 @@ jobs:
   test_echo:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Echo test (inline script)
         run: echo "Test"
       - name: Echo hello world (source script)
