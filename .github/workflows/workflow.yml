@@ -9,4 +9,4 @@ jobs:
         run: echo "Test"
       - name: Echo hello world (source script)
         working-directory: scripts
-        run: source test.sh
+        run: ./test.sh
