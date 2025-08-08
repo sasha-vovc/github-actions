@@ -1,0 +1,11 @@
+name: workflow.yml
+on: push
+
+jobs:
+  test_echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo test (inline script)
+        run: echo "Test"
+      - name: Echo hello world (source script)
+        run: source test.sh
